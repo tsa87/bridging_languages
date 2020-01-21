@@ -45,4 +45,4 @@ The environment is based on Ubuntu 19.10 and includes:
 
 # How can I customise the environment further?
 
-Make changes to `Dockerfile` in this directory, then run `docker-compose build development-environment`
+Make changes to `Dockerfile` in this directory, then run `docker-compose build dev-environment`
