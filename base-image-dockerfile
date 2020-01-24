@@ -1,5 +1,7 @@
 # rebuild and push with `docker build -f base-image-dockerfile .`
-# `docker push <hash of build> mobify/bridging_languages`
+# `docker tag <hash of build> mobify/bridging_languages`
+# `docker tag <hash of build> mobify/bridging_languages:latest`
+# `docker push mobify/bridging_languages`
 
 FROM ubuntu:19.10
 
@@ -86,3 +88,6 @@ RUN set -e; \
     && rm -rf "$GNUPGHOME" swift.tar.gz.sig swift.tar.gz
 
 CMD ["/bin/bash"]
+
+RUN bash -c 'echo "source $HOME/.cargo/env" >> /root/.profile'
+RUN bash -c 'echo "source $HOME/.cargo/env" >> /root/.bashrc'

@@ -39,6 +39,7 @@ The environment is based on Ubuntu 19.10 and includes:
 - Ruby 2.5.5 (`ruby`, `irb`)
 - The Glorious Glasgow Haskell Compilation System 8.6.5 (`ghc`, `ghci`)
 - Clojure 1.10.1.502 (`clojure`, `clj`)
+- Rust 1.40.0 (`rustc`, `cargo`)
 - Swift 5.1.3 (`swift`, `swiftc`)
 - Clang 7.0 (`clang`)
 - GCC 9.2.1 (`gcc`, `g++`)
