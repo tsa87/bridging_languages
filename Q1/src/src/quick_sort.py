@@ -10,7 +10,7 @@ def quick_sort_helper(arr, low, high):
     if low < high:
         pivot_point = partition(arr, low, high)
         quick_sort_helper(arr, low, pivot_point-1)
-        quick_sort_helper(arr, pivot_point, high)
+        quick_sort_helper(arr, pivot_point+1, high)
     return arr
 
 def partition(arr, low, high):
