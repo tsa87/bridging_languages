@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Q2/Q2.iml" filepath="$PROJECT_DIR$/Q2/Q2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bridging_languages.iml" filepath="$PROJECT_DIR$/bridging_languages.iml" />
       <module fileurl="file://$PROJECT_DIR$/Q1/src/sorter.iml" filepath="$PROJECT_DIR$/Q1/src/sorter.iml" />
     </modules>
