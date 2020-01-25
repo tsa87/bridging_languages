@@ -46,4 +46,6 @@ def stylize_var(original_var: str, style: str):
 if args.style not in AVAILABLE_STYLES:
     print("Please pick one style to transform from ", AVAILABLE_STYLES)
 else:
-    print(stylize_var(args.variable, args.style))
+    with open("transformed_variable_name.txt", "w") as f:
+        f.write(stylize_var(args.variable, args.style))
+        f.close()
