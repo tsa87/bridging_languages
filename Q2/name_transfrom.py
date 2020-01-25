@@ -1,7 +1,7 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s','--style')
-parser.add_argument('-v','--variable')
+parser.add_argument('-f','--file')
 args = parser.parse_args()
 
 AVAILABLE_STYLES = {"kebab-case", "snake_case", "PascalCase", "camelCase"}
@@ -46,6 +46,8 @@ def stylize_var(original_var: str, style: str):
 if args.style not in AVAILABLE_STYLES:
     print("Please pick one style to transform from ", AVAILABLE_STYLES)
 else:
+    with open(args.file, "r") as f:
+        variable = f.readline()
     with open("transformed_variable_name.txt", "w") as f:
-        f.write(stylize_var(args.variable, args.style))
+        f.write(stylize_var(variable, args.style))
         f.close()
